@@ -69,3 +69,8 @@ export async function authenticate(
     }
   }
 }
+
+//use this function when using google as an authenticator
+export async function handleGoogleLogin() {
+  await signIn('google')
+}
